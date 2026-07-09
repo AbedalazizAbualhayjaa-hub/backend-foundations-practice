@@ -1,8 +1,12 @@
-# Task 3 — Permissions Fix
+# Task 3 — Permissions
 
-## Commands Used
+Commands:
 
 ```bash
-chmod 755 linux-tasks/deploy/run.sh
-chmod 600 linux-tasks/deploy/config.env
-chmod 755 linux-tasks/deploy/public-data
+chmod 755 run.sh
+chmod 600 config.env
+chmod 755 public-data/
+```
+## Justification
+
+I used `600` for `config.env` because it may contain secrets, so only the owner should be able to read or edit it.
