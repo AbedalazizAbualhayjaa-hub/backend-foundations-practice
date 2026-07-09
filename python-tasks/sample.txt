@@ -1,0 +1,4 @@
+My name is Abedalaziz, I am AI Intern at classera.
+Backend development needs Python, SQL, and Linux.
+SQL is used for databases.
+Linux is important for backend tasks.
