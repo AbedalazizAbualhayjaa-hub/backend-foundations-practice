@@ -1,6 +1,6 @@
--- Task 16 — Aggregation
+-- Task 16 - Aggregation
 
--- 1. Total and average order amount per customer
+-- Total and average order amount per customer
 
 SELECT
     customers.name,
@@ -12,7 +12,7 @@ ON customers.id = orders.customer_id
 GROUP BY customers.id, customers.name;
 
 
--- 2. Customers whose total spending is more than 100
+-- Customers whose total spending is more than 100
 
 SELECT
     customers.name,
@@ -24,7 +24,7 @@ GROUP BY customers.id, customers.name
 HAVING SUM(orders.amount) > 100;
 
 
--- 3. Count the number of orders in each status
+-- Count the number of orders in each status
 
 SELECT
     status,
@@ -33,7 +33,7 @@ FROM orders
 GROUP BY status;
 
 
--- 4. Find the day with the highest total order amount
+-- Find the day with the highest total order amount
 
 SELECT
     DATE(created_at) AS order_day,
