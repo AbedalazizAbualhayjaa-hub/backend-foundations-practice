@@ -1,6 +1,6 @@
--- Task 15 — Joins
+-- Task 15 - Joins
 
--- 1. List every order with the customer name and city.
+-- List every order with the customer name and city.
 -- Join type: INNER JOIN
 -- Reason: We only need orders that have a matching customer.
 
@@ -15,7 +15,7 @@ INNER JOIN customers
 ON orders.customer_id = customers.id;
 
 
--- 2. List all customers with any orders they have.
+-- List all customers with any orders they have.
 -- Join type: LEFT JOIN
 -- Reason: We need all customers, even customers with no orders.
 
@@ -30,7 +30,7 @@ LEFT JOIN orders
 ON customers.id = orders.customer_id;
 
 
--- 3. Find customers who have never placed an order.
+-- Find customers who have never placed an order.
 -- Join type: LEFT JOIN
 -- Reason: We keep all customers, then filter where no order was found.
 
